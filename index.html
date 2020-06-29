@@ -1,0 +1,423 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>Midterm Presentation</title>
+
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/serif.css">
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <!-- stylesheet for heading overview plugin -->
+    <link rel="stylesheet" href="extCss/heading.css">
+
+    <!-- google charts loader -->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+    <!-- Printing and PDF exports -->
+    <script>
+        const link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+    <style>
+        img {
+            border: none !important;
+        }
+
+        /* Slide-specific vertical centering override */
+        .reveal .slides section[data-vertical-align-top] {
+            top: 0 !important;
+        }
+    </style>
+</head>
+<body>
+<div class="reveal">
+    <div class="slides">
+        <section class="no-heading-overview"
+                 data-background="https://gahr.dev/wp-content/uploads/2019/10/photo-1553481187-be93c21490a9.jpg">
+            <h2 style="color: #f5f5f5">GameBase</h2>
+            <h3 style="color: #f5f5f5">Midterm</h3>
+            <small style="color: #d6d6d6">by<br>Leonhard Gahr,<br>Norman Gehrsitz,<br>Stefan Lukas and<br>Kevin
+                Reis</small>
+        </section>
+
+        <section class="no-heading-overview table-of-contents" data-heading-tag="h2"
+                 data-heading="Overview"></section>
+
+        <section id="team" class="center">
+            <h2 class="heading-overview">Our Team</h2>
+            <style>
+                /* Three columns side by side */
+                #team .column {
+                    float: left;
+                    width: calc(50% - 16px);
+                    margin-bottom: 16px;
+                    padding: 0 8px;
+                }
+
+                /* Add some shadows to create a card effect */
+                #team .card {
+                    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+                }
+
+                /* Some left and right padding inside the container */
+                #team .container {
+                    padding: 0 16px;
+                }
+
+                /* Clear floats */
+                #team .container::after, .row::after {
+                    content: "";
+                    clear: both;
+                    display: table;
+                }
+            </style>
+            <div class="row">
+                <div class="column">
+                    <div class="card">
+                        <div class="container">
+                            <h5>Leonhard Gahr</h5>
+                            <small class="title">Project &amp; Configuration Manager</small>
+                            <small style="color: #6c757d; font-size: 0.55em">gamebase@gahr.dev</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="card">
+                        <div class="container">
+                            <h5>Norman Gehrsitz</h5>
+                            <small class="title">Software Architect / System Analyst</small>
+                            <small style="color: #6c757d; font-size: 0.55em">ngehrsitz@united-internet.de</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="card">
+                        <div class="container">
+                            <h5>Stefan Lukas</h5>
+                            <small class="title">Test Manager / Process Engineer</small>
+                            <small style="color: #6c757d; font-size: 0.55em">etaloof@gmail.com</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="card">
+                        <div class="container">
+                            <h5>Kevin Reis</h5>
+                            <small class="title">Deployment Manager / Tester</small>
+                            <small style="color: #6c757d; font-size: 0.55em">gamebase@humenius.me</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <section class="center">
+                <h2 class="heading-overview">Our Vision</h2>
+                <small>What do we want to achieve?</small>
+            </section>
+            <section>
+                <h3>The &ldquo;slogan&rdquo;</h3>
+                <blockquote>&ldquo;Setting up game servers can be painful&rdquo;</blockquote>
+            </section>
+            <section>
+                <h3>Actual goals</h3>
+                <ul>
+                    <li style="list-style: none; margin-left: -1em;">Easily...</li>
+                    <li>create dedicated gameservers</li>
+                    <li>manage multiple servers</li>
+                    <li>handle files & plugins</li>
+                    <li>administrate servers</li>
+                </ul>
+            </section>
+        </section>
+
+        <section>
+            <section class="center">
+                <h2 class="heading-overview">Technologies</h2>
+                <small>How will we achieve our vision?</small>
+            </section>
+            <section>
+                <h3>Angular & Nebular</h3>
+                <img src="img/angular.svg" alt="angular-logo" style="width: 100px; margin: 0; box-shadow: none;">
+                <img src="img/nebular-logo.png" alt="nebular-logo" style="width: 100px; margin: 0; box-shadow: none;">
+                <br>
+                <ul>
+                    <li>Based on Typescript</li>
+                    <li>Customizable UI Kit</li>
+                </ul>
+            </section>
+            <section>
+                <h3>Go & Gin</h3>
+                <img src="img/go-gopher.png" alt="go-gopher" style="width: 100px; margin: 0; box-shadow: none;">
+                <img src="img/go-gin-logo.png" alt="go-gin-logo" style="width: 100px; margin: 0; box-shadow: none;">
+                <br>
+                <ul>
+                    <li>Flexible, highly performant Web framework</li>
+                </ul>
+            </section>
+            <section>
+                <h3>Kubernetes & Docker</h3>
+                <img src="img/docker-logo.svg" alt="docker-logo" style="height: 50px; margin: 0; box-shadow: none;">
+                <img src="img/kubernetes-logo.svg" alt="kubernetes-logo"
+                     style="height: 50px; margin: 0; box-shadow: none;">
+                <br>
+                <ul>
+                    <li>Automated container orchestration</li>
+                </ul>
+            </section>
+            <section>
+                <h3>Postgres</h3>
+                <img src="img/postgres.svg" alt="postgres-logo" style="height: 100px; margin: 0; box-shadow: none;"><br>
+                <ul>
+                    <li>Database system</li>
+                </ul>
+            </section>
+        </section>
+
+        <section>
+            <section>
+                <h2 class="heading-overview">Project Management</h2>
+                <img alt="youtrack icon" src="img/YouTrack.png" style="width: 100px; margin: 0; box-shadow: none;"><br>
+            </section>
+
+            <section>
+                <h3>Organize our tasks</h3>
+                <img alt="Youtrack tasklist" src="img/YouTrack-issues_dark.png" style="width: 100%;">
+            </section>
+
+            <section data-transition="slide-in fade-out" data-vertical-align-top="true">
+                <h3 style="float: left; margin-left: 20px">Sprints - Board</h3>
+                <img alt="Youtrack sprint board" src="img/YouTrack-board.png" style="width: 100%;">
+            </section>
+
+            <section data-transition="fade-in slide-out" data-vertical-align-top="true">
+                <h3 style="float: left; margin-left: 20px">Sprints - Burndown</h3>
+                <img alt="Youtrack sprint burndown" src="img/YouTrack-burndown.png" style="width: 100%;">
+            </section>
+
+            <section>
+                <h3>Cumulative Flow</h3>
+                <img alt="Youtrack cumulative flow" src="img/YouTrack-cumulative.png" style="width: 100%;">
+            </section>
+        </section>
+
+        <section>
+            <section>
+                <h2 class="heading-overview">Architecture</h2>
+                <img src="img/architecture.png" alt="Architecture diagram" style="width: 75%">
+            </section>
+        </section>
+
+        <section>
+            <section>
+                <h2 class="heading-overview">Testing</h2>
+                <small>How do we provide QA?</small>
+            </section>
+            <section>
+                <h4>Cucumber .feature tests (E2E)</h4>
+                <img src="img/Testing-Frontend-e2e.png" alt="End to End tests" style="width: 100%">
+            </section>
+            <section>
+                <h4>Karma browser tests</h4>
+                <img src="img/Testing-Frontend-karma.png" alt="Karma tests" style="width: 100%">
+            </section>
+        </section>
+
+        <section>
+            <section>
+                <h2 class="heading-overview">CI/CD</h2>
+                <small>GitLab CI and their runners</small>
+            </section>
+            <section>
+                <h4>CI/CD Workflow</h4>
+                <img src="img/GitLab-CI-workflow.png" alt="GitLab CI workflow" style="width: 100%">
+            </section>
+            <section>
+                <h4>Our setup</h4>
+                <img src="img/GitLab-runners.svg" style="width: 75%;" alt="GitLab server">
+            </section>
+            <section>
+                <h4>Our jobs - frontend</h4>
+                <img src="img/GitLab-CI.png" style="width: 100%" alt="GitLab ci">
+            </section>
+            <section>
+                <h4>Our jobs - backend</h4>
+                <img src="img/GitLab-CI-backend.png" style="width: 100%" alt="GitLab ci">
+            </section>
+        </section>
+
+        <section>
+            <section>
+                <h2 class="heading-overview">Live Demo</h2>
+            </section>
+        </section>
+
+        <section class="no-heading-overview">
+            <h2>Thank you for your attention</h2>
+            <small>Do you have questions?</small>
+        </section>
+    </div>
+</div>
+
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.js"></script>
+
+<script>
+    Reveal.initialize({
+        // Display controls in the bottom right corner
+        controls: false,
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Set default timing of 2 minutes per slide
+        defaultTiming: 120,
+
+        // Display the page number of the current slide
+        slideNumber: true,
+
+        // Push each slide change to the browser history
+        history: true,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Vertical centering of slides
+        center: true,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autolaying embedded media (video/audio/iframe)
+        // - null: Media will only autoplay if data-autoplay is present
+        // - true: All media will autoplay, regardless of individual setting
+        // - false: No media will autoplay, regardless of individual setting
+        autoPlayMedia: false,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: Reveal.navigateNext,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // Hides the address bar on mobile devices
+        hideAddressBar: true,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style
+        transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+        // Transition speed
+        transitionSpeed: 'default', // default/fast/slow
+
+        // Transition style for full page slide backgrounds
+        backgroundTransition: 'fade', // none/fade/slide/convex/concave/zoom
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Parallax background image
+        parallaxBackgroundImage: '', // e.g. "'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg'"
+
+        // Parallax background size
+        parallaxBackgroundSize: '', // CSS syntax, e.g. "2100px 900px"
+
+        // Number of pixels to move the parallax background per slide
+        // - Calculated automatically unless specified
+        // - Set to 0 to disable movement along an axis
+        parallaxBackgroundHorizontal: null,
+        parallaxBackgroundVertical: null,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        dependencies: [
+            // Cross-browser shim that fully implements classList - https://github.com/eligrey/classList.js/
+            {
+                src: 'lib/js/classList.js', condition: function () {
+                    return !document.body.classList;
+                }
+            },
+
+            // Interpret Markdown in <section> elements
+            {
+                src: 'plugin/markdown/marked.js', condition: function () {
+                    return !!document.querySelector('[data-markdown]');
+                }
+            },
+            {
+                src: 'plugin/markdown/markdown.js', condition: function () {
+                    return !!document.querySelector('[data-markdown]');
+                }
+            },
+
+            // Syntax highlight for <code> elements
+            {
+                src: 'plugin/highlight/highlight.js', async: true, callback: function () {
+                    hljs.initHighlightingOnLoad();
+                }
+            },
+
+            // Zoom in and out with Alt+click
+            {src: 'plugin/zoom-js/zoom.js', async: true},
+
+            // Speaker notes
+            {src: 'plugin/notes/notes.js', async: true},
+
+            // MathJax
+            {src: 'plugin/math/math.js', async: true},
+
+            // heading overview
+            {src: 'extPlugin/heading-overview.js', async: true},
+        ]
+    });
+</script>
+</body>
+</html>
