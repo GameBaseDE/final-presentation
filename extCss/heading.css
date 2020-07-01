@@ -16,7 +16,7 @@
 }
 
 .head .active {
-    color: #000;
+    color: #FFF;
     -webkit-transition: color 2s;
     -moz-transition: color 2s;
     -ms-transition: color 2s;
